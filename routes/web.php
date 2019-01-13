@@ -11,6 +11,7 @@
 |
 */
 
+<<<<<<< HEAD
 Route::get('/','HomeController@index')->name('home');
 
 Route::get('/category','HomeController@index')->name('category');
@@ -43,3 +44,8 @@ Route::group(['prefix' => 'fashonadmin'], function()
     Route::resource('admincategory','CategoryController');
 
 });
+=======
+Route::get('/', function () {
+    return view('welcome');
+});
+>>>>>>> da71b1aa34076d190db246d9715d81fd49d56ff1
