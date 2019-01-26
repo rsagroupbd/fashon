@@ -9,9 +9,7 @@
 				<div class="col-first">
 					<h1>Product Details Page</h1>
 					<nav class="d-flex align-items-center">
-						<a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#">Shop<span class="lnr lnr-arrow-right"></span></a>
-						<a href="single-product.html">product-details</a>
+						{{ Breadcrumbs::render('details') }}
 					</nav>
 				</div>
 			</div>
@@ -23,25 +21,27 @@
 	<div class="product_image_area">
 		<div class="container">
 			<div class="row s_product_inner">
+		
 				<div class="col-lg-6">
 					<div class="s_Product_carousel">
 						<div class="single-prd-item">
-							<img class="img-fluid" src="theme/img/category/s-p1.jpg" alt="">
+							<img class="img-fluid" src="{{URL::to('productimage/'.$data->product_image)}}" alt="">
 						</div>
 						<div class="single-prd-item">
-							<img class="img-fluid" src="theme/img/category/s-p1.jpg" alt="">
+							<img class="img-fluid" src="{{URL::to('productimage/'.$data->product_image)}}" alt="">
 						</div>
 						<div class="single-prd-item">
-							<img class="img-fluid" src="theme/img/category/s-p1.jpg" alt="">
+							<img class="img-fluid" src="{{URL::to('productimage/'.$data->product_image)}}" alt="">
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-5 offset-lg-1">
 					<div class="s_product_text">
-						<h3>Faded SkyBlu Denim Jeans</h3>
-						<h2>$149.99</h2>
+
+						<h3>{{$data->product_name}}</h3>
+						<h2>${{$data->product_price}}</h2>
 						<ul class="list">
-							<li><a class="active" href="#"><span>Category</span> : Household</a></li>
+							<li><a class="active" href="#"><span>Category</span> : {{$data->category->category_name}}</a></li>
 							<li><a href="#"><span>Availibility</span> : In Stock</a></li>
 						</ul>
 						<p>Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for
@@ -62,6 +62,7 @@
 						</div>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</div>

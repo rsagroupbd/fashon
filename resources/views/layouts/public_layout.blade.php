@@ -51,7 +51,7 @@
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item active"><a class="nav-link" href="{{route('home')}}">Home</a></li>
-							<li class="nav-item "><a href="{{route('category')}}" class="nav-link">Shop</a></li>
+							<li class="nav-item "><a href="{{route('shop')}}" class="nav-link">Shop</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Blog</a>
@@ -114,9 +114,9 @@
 					<div class="row">
 						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
 							<div class="single-related-product d-flex">
-								<a href="#"><img src="theme/img/r1.jpg" alt=""></a>
+								<a href="#"><img src="{{URL::to('theme/img/r1.jpg')}}" alt=""></a>
 								<div class="desc">
-									<a href="{{route('product-details')}}" class="title">Black lace Heels</a>
+									<a href="#" class="title">Black lace Heels</a>
 									<div class="price">
 										<h6>$189.00</h6>
 										<h6 class="l-through">$210.00</h6>
@@ -126,9 +126,9 @@
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
 							<div class="single-related-product d-flex">
-								<a href="#"><img src="theme/img/r2.jpg" alt=""></a>
+								<a href="#"><img src="{{URL::to('theme/img/r2.jpg')}}" alt=""></a>
 								<div class="desc">
-									<a href="{{route('product-details')}}" class="title">Black lace Heels</a>
+									<a href="#" class="title">Black lace Heels</a>
 									<div class="price">
 										<h6>$189.00</h6>
 										<h6 class="l-through">$210.00</h6>
@@ -138,9 +138,9 @@
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
 							<div class="single-related-product d-flex">
-								<a href="#"><img src="img/r3.jpg" alt=""></a>
+								<a href="#"><img src="{{URL::to('theme/img/r3.jpg')}}" alt=""></a>
 								<div class="desc">
-									<a href="{{route('product-details')}}" class="title">Black lace Heels</a>
+									<a href="#" class="title">Black lace Heels</a>
 									<div class="price">
 										<h6>$189.00</h6>
 										<h6 class="l-through">$210.00</h6>
@@ -150,9 +150,9 @@
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
 							<div class="single-related-product d-flex">
-								<a href="#"><img src="theme/img/r5.jpg" alt=""></a>
+								<a href="#"><img src="{{URL::to('theme/img/r5.jpg')}}" alt=""></a>
 								<div class="desc">
-									<a href="{{route('product-details')}}" class="title">Black lace Heels</a>
+									<a href="#" class="title">Black lace Heels</a>
 									<div class="price">
 										<h6>$189.00</h6>
 										<h6 class="l-through">$210.00</h6>
@@ -162,9 +162,9 @@
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
 							<div class="single-related-product d-flex">
-								<a href="#"><img src="theme/img/r6.jpg" alt=""></a>
+								<a href="#"><img src="{{URL::to('theme/img/r6.jpg')}}" alt=""></a>
 								<div class="desc">
-									<a href="{{route('product-details')}}" class="title">Black lace Heels</a>
+									<a href="#" class="title">Black lace Heels</a>
 									<div class="price">
 										<h6>$189.00</h6>
 										<h6 class="l-through">$210.00</h6>
@@ -174,9 +174,9 @@
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
 							<div class="single-related-product d-flex">
-								<a href="#"><img src="theme/img/r7.jpg" alt=""></a>
+								<a href="#"><img src="{{URL::to('theme/img/r7.jpg')}}" alt=""></a>
 								<div class="desc">
-									<a href="{{route('product-details')}}" class="title">Black lace Heels</a>
+									<a href="#" class="title">Black lace Heels</a>
 									<div class="price">
 										<h6>$189.00</h6>
 										<h6 class="l-through">$210.00</h6>
@@ -186,9 +186,9 @@
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-related-product d-flex">
-								<a href="#"><img src="theme/img/r9.jpg" alt=""></a>
+								<a href="#"><img src="{{URL::to('theme/img/r9.jpg')}}" alt=""></a>
 								<div class="desc">
-									<a href="{{route('product-details')}}" class="title">Black lace Heels</a>
+									<a href="#" class="title">Black lace Heels</a>
 									<div class="price">
 										<h6>$189.00</h6>
 										<h6 class="l-through">$210.00</h6>
@@ -198,9 +198,9 @@
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-related-product d-flex">
-								<a href="#"><img src="theme/img/r10.jpg" alt=""></a>
+								<a href="#"><img src="{{URL::to('theme/img/r10.jpg')}}" alt=""></a>
 								<div class="desc">
-									<a href="{{route('product-details')}}" class="title">Black lace Heels</a>
+									<a href="#" class="title">Black lace Heels</a>
 									<div class="price">
 										<h6>$189.00</h6>
 										<h6 class="l-through">$210.00</h6>
@@ -210,9 +210,9 @@
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-related-product d-flex">
-								<a href="#"><img src="theme/img/r11.jpg" alt=""></a>
+								<a href="#"><img src="{{URL::to('theme/img/r11.jpg')}}" alt=""></a>
 								<div class="desc">
-									<a href="{{route('product-details')}}" class="title">Black lace Heels</a>
+									<a href="#" class="title">Black lace Heels</a>
 									<div class="price">
 										<h6>$189.00</h6>
 										<h6 class="l-through">$210.00</h6>
@@ -225,7 +225,7 @@
 				<div class="col-lg-3">
 					<div class="ctg-right">
 						<a href="#" target="_blank">
-							<img class="img-fluid d-block mx-auto" src="theme/img/category/c5.jpg" alt="">
+							<img class="img-fluid d-block mx-auto" src="{{URL::to('theme/img/category/c5.jpg')}}" alt="">
 						</a>
 					</div>
 				</div>

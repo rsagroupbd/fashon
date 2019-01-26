@@ -11,19 +11,17 @@
 |
 */
 
+Auth::routes();
+
+
 Route::get('/','HomeController@index')->name('home');
 
-Route::get('/category','HomeController@index')->name('category');
+Route::get('/shop/{cat?}/{subcat?}','HomeController@shop')->name('shop');
 
-Route::get('/product-details', function () {
-    return view('product-details');
-})->name('product-details');
+Route::get('/product-details/{slug}','HomeController@productdetails')->name('product-details');
 
-
-Route::get('/cart', function () {
-    return view('cart');
-})->name('cart');
-
+Route::get('/cart','CartController@showcart')->name('cart');
+Route::get('/addtocart','CartController@add_to_cart')->name('addtocart');
 
 Route::get('/checkout', function () {
     return view('checkout');
@@ -35,15 +33,26 @@ Route::get('/contact', function () {
 
 Route::group(['prefix' => 'fashonadmin'], function()
 {
-    Route::get('/',function(){
-    	echo "success";
-    });
+
+	Route::get('/', 'AdminhomeController@index')->name('adminhome');
+	Route::resource('user','UserController');
+
+    Route::resource('product','ProductController');
 
     Route::resource('admincategory','CategoryController');
+    Route::resource('product','ProductController');
+    Route::resource('color','ColorController');
+    /* Account Setting */
+	Route::get('/account/changepassword', 'AccountController@changepassword')->name('changepassword');
+	Route::get('/account/viewprofile', 'AccountController@viewprofile')->name('viewprofile');
+	Route::put('/account/uploadprofileimage/{user}', 'AccountController@uploadprofileimage')->name('uploadprofileimage');
+	Route::post('/account/actionchangepassword','AccountController@actionchangepassword')->name('actionchangepassword');
+
 
 });
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::resource('user','UserController');
+
+
+
 
